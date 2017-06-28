@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: whitesmoke;
+}
+nav{
+	background-color: blue;
+}
+nav .brand-logo{
+	padding-left: 20px;
+}
+.box{
+    padding: 123px 70px;
+    border: 2px solid;
+    margin-top: 48px;
+}
+#tarea{
+	margin-bottom: 10px;
+}
