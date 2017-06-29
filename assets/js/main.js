@@ -5,15 +5,21 @@ $(document).ready(function(){
 		if (tarea == ""){
 			alert("Ingresa una tarea");
 		}else{
-			$("#to-do").append("<a href='#!' class='collection-item enlace'>"+ tarea + "</a>");
+			$("#to-do").append("<li><a href='#!' class='collection-item remove'>"+ tarea + "</a></li>");
 			$("#tarea").val("");
 		}
 	})
+	$(document).on('click', '.remove', function(){
+		var rem = $(this).parent().remove();
+		$("#done").append(rem);
+	});
+});
 
-	$("#to-do").click(function(e){
+
+/*
+
+$("#to-do").click(function(e){
 		e.preventDefault();
 		var tarea = $("#tarea").val();
-		$(this).remove();
-		$("#com-lista").append("<a href='#!' class='collection-item enlace'>"+ tarea + "</a>");
-	})
-});
+		$(".enlace").remove();
+	})*/
