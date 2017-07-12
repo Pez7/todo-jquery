@@ -16,7 +16,7 @@ $(document).ready(function(){
 									"</a>"+
 								"</li>");
 			$("#tarea").val("");
-				$(".done").click(function(){
+		$(".done").click(function(){
 			var rem = $(this).parent().remove();
 		});
 		$(".remove").click(function(){
