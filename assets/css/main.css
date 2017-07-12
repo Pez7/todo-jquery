@@ -21,3 +21,10 @@ nav .brand-logo{
 .collection{
 	border:none;
 }
+.lista{
+	padding-right:10px;
+	color:black;
+}
+.remove:hover{
+	cursor:pointer;
+}
